@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "infiniteScroll";
+}
+<link rel='stylesheet prefetch' href='//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css'>
+
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/angular.ng-notify/0.8.0/ng-notify.min.css" />
+
+@*style sheet for setting chatform in footer*@
+<link href="~/PubNub/CSS/pubnubBaseStyle.css" rel="stylesheet" />
+<link href="~/PubNub/CSS/chat.css" rel="stylesheet" />
+<link href="~/PubNub/CSS/ng-notify.theme.css" rel="stylesheet" />
+
+<div ng-app="chatApp">
+    <h2>Test</h2>
+  <message-list></message-list>
+  <message-form></message-form>
+</div>
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-route.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+
+
+<script src='//cdn.pubnub.com/pubnub-3.7.21.js'></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+<script src='//cdn.pubnub.com/sdk/pubnub-angular/pubnub-angular-3.1.1.min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.2.0/lodash.js'></script>
+<script src="https://cdn.jsdelivr.net/angular.ng-notify/0.8.0/ng-notify.min.js"></script>
+
+@*Manual JS Files*@
+
+
+<script src="~/PubNub/JS/app.js"></script>
+@*<script src="~/app/app.routes.js"></script>*@
+<script src="~/app/app.config.js"></script>
+
+<script src="~/PubNub/JS/current_user.service.js"></script>
+<script src="~/PubNub/JS/message-factory.js"></script>
+
+<script src="~/shared/user-avatar.directive.js"></script>
+<script src="http://localhost:1051/components/message-form/message-form.directive.js"></script>
+<script src="~/components/message-list/message-list.directive.js"></script>
+<script src="~/components/message-item/message-item.directive.js"></script>
